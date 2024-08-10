@@ -130,7 +130,7 @@ class Dataset:
     def get_train_ds(self, reduce_items_p=0):
         # Source (music) file paths for train set
         self.tr_source_fps = sorted(
-            glob.glob(self.source_root_dir + _prefix + '**/*.wav',
+            glob.glob(self.source_root_dir + '**/*.wav',
                       recursive=True))
 
         ds = genUnbalSequence(
